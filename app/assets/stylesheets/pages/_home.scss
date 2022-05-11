@@ -30,9 +30,10 @@ body {
 .banner {
   display: flex;
   background-image: url(https://images.unsplash.com/photo-1602409339188-95d178a611a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80);
-  width: 100%;
+  width: auto;
   height: auto;
   background-position: center;
+  background-repeat: no-repeat;
   opacity: 0.9;
   height: 600px;
 }
@@ -87,4 +88,8 @@ footer {
   padding: 30px;
   background-color: #f7f7f7;
   color: #666;
+}
+
+.cards img {
+  width: 300px;
 }
