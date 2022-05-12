@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Your orders</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/pages/_home.scss">
+</head>
+  <body>
+<div class="banner">
+    <div class="banner-text">
+      <h1 class="banner-title">The Candle Shop</h1>
+      <p class="banner-description">a special candle for every moment</p>
+    </div>
+  </div>
+
+<div id="orders">
+<%= render @orders %>
+</div>
+
+<div class="card" style="width: 18rem;">
+<ul class="list-group list-group-flush">
+<% @orders.each do |order| %>
+<li class="list-group-item" >
+<%= order.candle_id %>
+
+
+</li>
+<% end %>
+<ul>
+<p>thiis where the orders will show up
+dfkgflfg
+dfslkg
+fdlkg<br/>
+sdfklmhç
+grfdkl
+</p>
+</div>
+</body>
