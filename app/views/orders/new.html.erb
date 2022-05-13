@@ -1,6 +1,11 @@
 
 <p>new orders</p>
-<%= simple_form_for [@candle, @order] do |f| %>
+<%= simple_form_for [ @candle, @order ] do |f| %>
 <%= f.input :quantity %>
-<%= f.submit class: 'btn btn-primary' %>
+<%= f.submit class: "btn btn-light btn-sm rounded-pill " %>
+<br/>
+
+
+
+
 <% end %>
