@@ -1,4 +1,6 @@
 // Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Source+Sans+Pro:wght@300&display=swap');
+
 body {
   margin: 0;
   min-height: 100%;
@@ -16,6 +18,7 @@ body {
   font-size: 17px;
   text-decoration: none;
   color: #000;
+  font-family: 'Playfair Display', serif;
 }
 
 .nav-link {
@@ -29,22 +32,25 @@ body {
 
 .banner {
   display: flex;
-  background-image: url(https://images.unsplash.com/photo-1602409339188-95d178a611a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80);
   width: auto;
   height: auto;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.9;
   height: 600px;
+  object-fit: cover;
+  background: linear-gradient(0deg, rgba(46, 46, 46, 0.3), rgba(46, 46, 46, 0.3)), url(https://images.unsplash.com/photo-1602409339188-95d178a611a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80);
+  background-size: cover;
 }
 
 .banner h1 {
   font-size: 50px;
   text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 
 .banner-text {
   display: flex;
+  color: white;
   flex-direction: column;
   align-items: center;
   justify-content: center;

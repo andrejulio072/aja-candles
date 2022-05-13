@@ -1,1 +1,38 @@
-<h1>candles index page</h1>
+<head>
+  <meta charset="utf-8">
+  <title>The Candle Shop</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/pages/_home.scss">
+</head>
+
+<body>
+    <div class="nav">
+    <a href="#login" class="nav-link">login</a>
+    <a href="#" class="nav-title">The Candle Shop</a>
+    <a href="bag" class="bag-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-handbag" viewBox="0 0 16 16">
+        <path
+          d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z" />
+      </svg>
+    </a>
+  </div>
+
+  <div id="shop" class="cards">
+<% @candles.each do |candle| %>
+    <div class="image-1">
+      <%= image_tag("cherry-peony.webp")%>
+      <p><br><%= candle.name %></p>
+      <p>$ 25</p>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-info"><%= link_to "Add to bag", candles_path %></button>
+        <%= link_to new_candle_order_path(candle, Order.new), method: :post %>
+      </div>
+    </div>
+<%end  %>
+  </div>
+
+  <div id="footer">
+  <footer>
+    <p>Made with ♥ by your StaySafe team.</p>
+  </footer>
+</div>
+</body>    
