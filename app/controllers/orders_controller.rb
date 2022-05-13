@@ -13,7 +13,7 @@ class OrdersController < ApplicationController
 	  @order = Order.new(order_params)
 	  @order.candle = @order
     @order.save
-	  redirect_to order_path(@order)
+	  # redirect_to order_path(@order)
 	end
 
   private

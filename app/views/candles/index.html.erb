@@ -23,16 +23,51 @@
       <p><br><%= candle.name %></p>
       <p>$ 25</p>
       <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-outline-info"><%= link_to "Add to bag", candles_path %></button>
-        <%= link_to new_candle_order_path(candle, Order.new), method: :post %>
+        <button type="button" class="btn btn-outline-info"><%= link_to "see bag",candle_orders_path(candle) %></button>
+           <button type="button" class="btn btn-outline-info"><%= link_to "Add to bag",new_candle_order_path(candle) %></button>
       </div>
     </div>
 <%end  %>
   </div>
 
+
   <div id="footer">
-  <footer>
+    <footer class="bg-dark text-center text-white">
+
+   <div class="container p-4 pb-0">
+
     <p>Made with ♥ by your StaySafe team.</p>
+    <div class="sell-text">
+  <div class="d-flex justify-content-center">
+    <p> You can also post your homemade candles on our site </p>
+  </div>
+  <button type="button" class="btn btn-light btn-sm rounded-pill "><%= link_to " Sell with Us", new_candle_url %></button>
+</div>
+<br/>
+     <section class="mb-4">
+     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+    </section>
+
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="#">StaySafe.com</a>
+  </div>
   </footer>
 </div>
-</body>    
+
+</body>
