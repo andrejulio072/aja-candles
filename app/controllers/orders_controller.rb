@@ -11,9 +11,9 @@ class OrdersController < ApplicationController
 
   def create
 	  @order = Order.new(order_params)
-	  @order.candle = @order
+    @order.candle = @candle
     @order.save
-	  # redirect_to order_path(@order)
+	   redirect_to candle_orders_path(@candle)
 	end
 
   private
