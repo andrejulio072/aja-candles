@@ -4,6 +4,7 @@ class CandlesController < ApplicationController
   end
 
   def new
+    @candle = Candle.new
   end
 
   def create

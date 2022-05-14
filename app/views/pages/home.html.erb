@@ -24,7 +24,7 @@
     <div class="banner-text">
       <h1 class="banner-title">The Candle Shop</h1>
       <p class="banner-description">A special candle for every moment</p>
-      <button type="button" class="btn btn-primary btn-sm"><%= link_to "Shop Now", candles_path %></button>
+      <button type="button" class="btn btn-light btn-sm rounded-pill "><%= link_to "Shop Now", candles_path %></button>
     </div>
   </div>
 
@@ -54,10 +54,40 @@
     </div>
   </div>
 
+<div class="div">
+ <button type="button" class="btn btn-light btn-sm rounded-pill "><%= link_to "Shop Now", candles_path %></button>
+</div>
+
 </body>
 <div id="footer">
-  <footer>
+  <footer class="bg-dark text-center text-white">
+
+   <div class="container p-4 pb-0">
+
     <p>Made with ♥ by your StaySafe team.</p>
+     <section class="mb-4">
+     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+    </section>
+
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="#">StaySafe.com</a>
+  </div>
   </footer>
 </div>
 
