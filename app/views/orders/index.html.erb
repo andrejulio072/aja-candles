@@ -1,4 +1,4 @@
-<h1>show all order</h1>
+<h1>details of the candle you ordered:</h1>
 <head>
   <meta charset="utf-8">
   <title>Your orders</title>
@@ -15,3 +15,67 @@
       </svg>
     </a>
   </div>
+
+<p>
+<strong>
+candle name
+</strong>
+<%= @candle.name %>
+</p>
+
+<p>
+<strong>
+candle type
+</strong>
+<%= @candle.candle_type %>
+</p>
+
+<p>
+<strong>
+description
+</strong>
+<%= @candle.description %>
+</p>
+
+<p>
+<strong>
+quantity
+</strong>
+
+</p>
+
+<%= link_to "edit", edit_candle_order_path(@orders) %>
+<%= link_to 'back', new_candle_order_path(candle)  %>
+
+
+<div id="footer">
+  <footer class="bg-dark text-center text-white">
+
+   <div class="container p-4 pb-0">
+
+    <p>Made with ♥ by your StaySafe team.</p>
+     <section class="mb-4">
+     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+    </section>
+
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="#">StaySafe.com</a>
+  </div>
+  </footer>
+</div>
